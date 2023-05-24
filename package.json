@@ -1,0 +1,14 @@
+{
+  "name": "s2-bug",
+  "version": "1.0.0",
+  "description": "Attempting to resolve runtime issues for @radarlabs/s2 on AWS lambda Node v18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@radarlabs/s2": "^0.0.5"
+  }
+}
