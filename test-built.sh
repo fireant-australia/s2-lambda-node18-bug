@@ -15,7 +15,7 @@ docker rm -f s2container
 # build image
 docker build -t s2bugtest-built -f ./docker/Dockerfile.node18.aws.test .
 docker create --name s2bugtest-built-instance s2bugtest-built
-docker cp ./s2.node s2bugtest-built-instance:/var/task/node_modules/@radarlabs/s2/lib/binding/Release/node-v108-linux-arm64/
+docker cp ./s2.node s2bugtest-built-instance:/var/task/node_modules/@radarlabs/s2/lib/binding/Release/node-v108-linux-$(node -e "console.log(process.arch);")/
 docker start --attach s2bugtest-built-instance
 docker rm -f s2bugtest-built-instance
 
