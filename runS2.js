@@ -5,3 +5,5 @@ console.log(cell1.token());
 
 const cell2 = new s2.CellId("89c25a31");
 console.log(cell2.id());
+
+console.log("SUCCESS!!");
